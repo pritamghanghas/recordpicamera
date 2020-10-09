@@ -1,0 +1,15 @@
+[Unit]
+Description=APM autopilot launch service
+After=lightdm.service
+
+[Service]
+Type=oneshot
+User=pi
+Group=pi
+Type=simple
+WorkingDirectory=/home/pi/bin/
+ExecStart=/home/pi/bin/camera_script.sh
+
+[Install]
+WantedBy=multi-user.target
+
