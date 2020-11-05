@@ -18,7 +18,7 @@ video_directory=/media/pi/data
 # wait for mount to finish, blind sleep for the time being
 sleep 100 # during this time the desktop should have started and usb drive mounted.
 
-mkdir -p $video_directory
+#mkdir -p $video_directory
 
 cd $video_directory
 
